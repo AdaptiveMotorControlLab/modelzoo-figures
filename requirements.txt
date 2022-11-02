@@ -1,0 +1,11 @@
+numpy
+pandas
+tables
+matplotlib
+seaborn
+persim
+jupyter
+jupytext
+nbconvert
+h5py
+black
