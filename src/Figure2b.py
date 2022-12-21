@@ -83,7 +83,11 @@ horse_RMSE_ood = horse_df['RMSE_ood'].groupby(level = [0,1]).mean()
 
 print (horse_unbalanced_zeroshot)
 
-names = ['openfield', 'rodent', 'horse']
+#names = ['openfield', 'rodent', 'horse']
+
+names = ['DLC-Openfield', 'iRodents', 'Horse-10']
+
+
 pal = 'magma_r'
 
 fig, (ax1, ax2) = plt.subplots(2, 1, sharex=True)
