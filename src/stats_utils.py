@@ -36,7 +36,7 @@ def load_datasets_metrics(metric="rmse"):
     }
     rodent_df.rename(index=rename_dict, inplace=True)
 
-    horse_df = pd.read_hdf("data/horse_ratios.h5")[f"{metric.upper()}_iid"]
+    horse_df = pd.read_hdf("data/horse_ratios.h5")[[f"{metric.upper()}_iid", f"{metric.upper()}_ood"]]
     horse_unbalanced_zeroshot = horse_df.loc["unbalanced_zeroshot", "1000"]
     horse_unbalanced_zeroshot.index = horse_unbalanced_zeroshot.index.str.replace(
         "_best", ""
@@ -81,7 +81,10 @@ def load_datasets_metrics(metric="rmse"):
     df_rodent = _reset_df_index(rodent_df)
     df_rodent = _add_zeroshot(df_rodent, rodent_unbalanced_zeroshot)
     df_rodent["dataset"] = "rodent"
-    df_horse = _reset_df_index(horse_df)
-    df_horse = _add_zeroshot(df_horse, horse_unbalanced_zeroshot)
+    df_horse = _reset_df_index(horse_df[f"{metric.upper()}_iid"])
+    df_horse = _add_zeroshot(df_horse, horse_unbalanced_zeroshot[f"{metric.upper()}_iid"])
     df_horse["dataset"] = "horse"
-    return pd.concat((df_openfield, df_rodent, df_horse)).reset_index(drop=True)
+    df_horse_ood = _reset_df_index(horse_df[f"{metric.upper()}_ood"])
+    df_horse_ood = _add_zeroshot(df_horse_ood, horse_unbalanced_zeroshot[f"{metric.upper()}_ood"])
+    df_horse_ood["dataset"] = "horse_ood"
+    return pd.concat((df_openfield, df_rodent, df_horse, df_horse_ood)).reset_index(drop=True)
