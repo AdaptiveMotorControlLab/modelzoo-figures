@@ -15,6 +15,7 @@ sns.set_style("ticks")
 def plot_figure2b():
 
     openfield_df = pd.read_hdf('../data/openfield_ratios.h5')
+
     openfield_unbalanced_zeroshot = openfield_df.loc['unbalanced_zeroshot', '600000'].mean(axis=0)
 
     drop_list = ['balanced_memory_replay_threshold_0.0_750000',
@@ -24,19 +25,13 @@ def plot_figure2b():
                  'balanced_memory_replay_threshold_0.8_snapshot_700000',
                  'balanced_memory_replay_threshold_0.8_750000',
                  'unbalanced_memory_replay_750000']
-
     openfield_df.drop(drop_list, inplace=True)
-
-
     rename_dict = {'baseline': 'ImageNet transfer learning',
                    'zeroshot': 'SA + Zeroshot',
-                   'unbalanced_super_remove_head_750000': 'SA + Randomly Initialized Decoder',          
+                   'unbalanced_super_remove_head_750000': 'SA + Randomly Initialized Decoder',
                    'unbalanced_memory_replay_threshold_0.8_750000': 'SA + Memory Replay',
                    'unbalanced_naive_finetune_750000': 'SA + Naive finetuning'}
     openfield_df.rename(index=rename_dict, inplace=True)
-
-
-
     openfield_RMSE = openfield_df.groupby(level = (0,1)).mean()['RMSE']
 
 
@@ -50,7 +45,7 @@ def plot_figure2b():
 
     rename_dict = {'baseline': 'ImageNet transfer learning',
                    'zeroshot': 'SA + Zeroshot',
-                   'unbalanced_super_remove_head_700000': 'SA + Randomly Initialized Decoder',          
+                   'unbalanced_super_remove_head_700000': 'SA + Randomly Initialized Decoder',
                    'unbalanced_memory_replay_threshold_0.8_700000': 'SA + Memory Replay',
                    'unbalanced_naive_finetune_700000': 'SA + Naive Fine-tuning'}
 
@@ -63,85 +58,74 @@ def plot_figure2b():
     #print (rodent_RMSE)
 
     horse_df = pd.read_hdf('../data/horse_ratios.h5')
-    print (horse_df.to_string())
     horse_unbalanced_zeroshot = horse_df.loc['unbalanced_zeroshot', '1000'].mean(axis=0)
     drop_list = ['unbalanced_zeroshot']
-
     horse_df.drop(drop_list, inplace = True)
-
     rename_dict = {'baseline': 'ImageNet transfer learning',
                    'zeroshot': 'SA + Zeroshot',
-                   'super_remove_head': 'SA + Randomly Initialized Decoder',          
+                   'super_remove_head': 'SA + Randomly Initialized Decoder',
                    'unbalanced_memory_replay_threshold_0.8_700000': 'SA + Memory Replay',
                    'unbalanced_naive_finetune_700000': 'SA + Naive Fine-tuning'}
     horse_df.rename(index=rename_dict, inplace=True)
 
-
     horse_RMSE = horse_df['RMSE_iid'].groupby(level = [0,1]).mean()
-
     horse_RMSE_iid = horse_RMSE
-
     horse_RMSE_ood = horse_df['RMSE_ood'].groupby(level = [0,1]).mean()
 
     print (horse_unbalanced_zeroshot)
 
-    #names = ['openfield', 'rodent', 'horse']
-
-    names = ['DLC-Openfield', 'iRodent', 'Horse-10']
-
-
+    names = ['openfield', 'rodent', 'horse']
     pal = 'magma_r'
 
-    fig, (ax1, ax2) = plt.subplots(2, 1, sharex=True)
+    fig, (ax1, ax2) = plt.subplots(2, 1, sharex=True, figsize=(6, 4), dpi=600)
      # adjust space between axes
 
     ratios = ['0.01', '0.05', '0.1', '0.5', '1.0']
-    dataset_colors = plt.cm.get_cmap('tab20b', 10)
+    # ratios = list(map(float, ratios))
+    colors = ["3d5a80", "98c1d9", "e7d7c1"]
+    colors = [f"#{c}" for c in colors]
+    lw = 3
     zeroshots = [openfield_unbalanced_zeroshot, rodent_unbalanced_zeroshot, horse_unbalanced_zeroshot]
     for idx, dataset_score in enumerate([openfield_RMSE, rodent_RMSE, horse_RMSE]):
         name = names[idx]
-        #print (dataset_RMSE['ImageNet transfer learning'])
-        #baseline = dataset_RMSE.loc['ImageNet transfer learning'].loc[str(ratio)]
+        color = colors[idx]
 
-        color = dataset_colors(idx)
-
-        # rodent uses ax1
         if idx == 1:
             ax = ax1
         else:
             ax = ax2
-        print (ax)
 
         zeroshot = zeroshots[idx]['RMSE'] if idx != 2 else zeroshots[idx]['RMSE_iid']
-        print (zeroshot)
         zeroshot = np.tile(zeroshot, len(ratios))
 
-        ax.plot(ratios, dataset_score['ImageNet transfer learning'], 
-                 label = name + ' ' + 'ImageNet transfer learning', 
+        ax.plot(ratios, dataset_score['ImageNet transfer learning'],
+                 label = name + ' ' + 'ImageNet transfer learning',
                  linestyle = 'dashed',
                  color = color,
-                 marker = 'o')
+                 marker = 'o',
+                 lw=lw)
 
-        ax.plot(ratios, dataset_score['SA + Memory Replay'], 
+        ax.plot(ratios, dataset_score['SA + Memory Replay'],
                  label = name + ' '+'SA + Memory replay',
                  linestyle = 'solid',
-                 color = color,             
-                 marker = 'o')
+                 color = color,
+                 marker = 'o',
+                #  alpha=0.6,
+                 lw=lw)
         ax.plot(ratios, zeroshot,
                label = name + ' ' + 'Zeroshot',
-                linestyle = 'dashed',
-                linewidth = 3,
+                linestyle = 'dotted',
+                lw=lw,
+                # alpha=0.3,
                 color = color)
-
 
     ax1.spines.bottom.set_visible(False)
     ax1.spines.top.set_visible(False)
     ax2.spines.top.set_visible(False)
 
     #ax1.xaxis.tick_top()
-    fig.subplots_adjust(hspace=0.05)     
+    fig.subplots_adjust(hspace=0.05)
     #ax1.legend().remove
-
 
     ax1.tick_params(labeltop=False)  # don't put tick labels at the top
     ax2.xaxis.tick_bottom()
@@ -153,15 +137,47 @@ def plot_figure2b():
     ax2.plot([0, 1], [1, 1], transform=ax2.transAxes, **kwargs)
 
     ax1.set_xlabel('')
+    ax2.set_xlabel('Training data fraction')
+    # ax2.set_ylabel('RMSE')
     fig.text(0.04, 0.5, 'RMSE', va='center', rotation='vertical')
-    fig.text(0.5, 0.04, 'Training data fraction', ha='center')
+    # fig.text(0.5, 0.04, 'Training data fraction', ha='center')
     ax1.set_ylim(20, 550)
     ax2.set_ylim(0, 30)
-    fig.legend(bbox_to_anchor=(1.5, 1.0))
 
-    plt.savefig('summary_plot.png', dpi=800,  bbox_inches='tight')
-
-
+    mew = 0
+    mec = 'dimgray'
+    patches = [
+        plt.Line2D([0], [0], color='none', marker='o', label="DLC-Openfield", markersize=8, mfc=colors[0], mec=mec, mew=mew),
+        plt.Line2D([0], [0], color='none', marker='o', label="iRodents", markersize=8, mfc=colors[1], mec=mec, mew=mew),
+        plt.Line2D([0], [0], color='none', marker='o', label="Horse-10", markersize=8, mfc=colors[2], mec=mec, mew=mew),
+    ]
+    fc = 'lightgray'
+    leg = fig.legend()
+    patches_ = leg.legendHandles.copy()
+    for p in patches_:
+        p.set_markerfacecolor(fc)
+        p.set_color(fc)
+    leg.remove()
+    patches.extend([
+        patches_[0],
+        patches_[4],
+        patches_[8],
+    ])
+    patches[-3].set_label('ImageNet transfer learning')
+    patches[-2].set_label('Memory replay')
+    patches[-1].set_label('Zero-shot')
+    fig.legend(
+        handles=patches,
+        frameon=False,
+        borderaxespad=0.0,
+        bbox_to_anchor=(0.88, 0.85),
+        ncol=2,
+        columnspacing=1,
+        labelspacing=0.5,
+        fontsize='medium',
+        scatteryoffsets=[0.5],
+    )
+    fig.savefig('summary_plot.png', dpi=600, bbox_inches='tight', pad_inches=0.05)
 
 def plot_figure2c():
 
