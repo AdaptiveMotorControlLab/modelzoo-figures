@@ -148,7 +148,7 @@ def plot_figure2b():
     mec = 'dimgray'
     patches = [
         plt.Line2D([0], [0], color='none', marker='o', label="DLC-Openfield", markersize=8, mfc=colors[0], mec=mec, mew=mew),
-        plt.Line2D([0], [0], color='none', marker='o', label="iRodents", markersize=8, mfc=colors[1], mec=mec, mew=mew),
+        plt.Line2D([0], [0], color='none', marker='o', label="iRodent", markersize=8, mfc=colors[1], mec=mec, mew=mew),
         plt.Line2D([0], [0], color='none', marker='o', label="Horse-10", markersize=8, mfc=colors[2], mec=mec, mew=mew),
     ]
     fc = 'lightgray'
