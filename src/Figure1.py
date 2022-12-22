@@ -6,17 +6,19 @@ import pandas as pd
 def plot_figure1e():
     dataset_decomposition = pd.read_hdf('../data/dataset_decomposition.h5')
 
+    print (dataset_decomposition)
     rename_dict = {'swimming_ole': 'Kiehn Lab Swimming',
                    'openfield_ole': 'Kiehn Lab Openfield',
                    'treadmill_ole': 'Kiehn Lab Treadmill',
                    'MackenzieMausHaus': 'MausHaus',
-                   'daniel3mouse': 'TriMice',
+                   'daniel3mouse': 'TriMouse',
                    'dlc-openfield': 'DLC Openfield',
                    'TwoWhiteMice_GoldenLab': 'WhiteMice',
                    'ChanLab': 'BlackMice',
                    'animalpose': 'AnimalPose',
                    'cheetah': 'AcinoSet',
                    'horse-10': 'Horse-10',
+                   'iRodents': 'iRodent',
                    'stanforddogs': 'StanfordDogs',
                   }
 
