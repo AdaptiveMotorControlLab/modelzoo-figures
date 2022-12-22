@@ -1,8 +1,8 @@
 import pandas as pd
 
 
-def load_datasets_rmse():
-    openfield_df = pd.read_hdf("data/openfield_ratios.h5")["RMSE"]
+def load_datasets_metrics(metric="rmse"):
+    openfield_df = pd.read_hdf("data/openfield_ratios.h5")[metric.upper()]
     openfield_unbalanced_zeroshot = openfield_df.loc["unbalanced_zeroshot", "600000"]
     drop_list = [
         "balanced_memory_replay_threshold_0.0_750000",
@@ -23,7 +23,7 @@ def load_datasets_rmse():
     }
     openfield_df.rename(index=rename_dict, inplace=True)
 
-    rodent_df = pd.read_hdf("data/rodent_ratios.h5")["RMSE"]
+    rodent_df = pd.read_hdf("data/rodent_ratios.h5")[metric.upper()]
     rodent_unbalanced_zeroshot = rodent_df.loc["unbalanced_zeroshot", "700000"]
     drop_list = ["unbalanced_zeroshot"]
     rodent_df.drop(drop_list, inplace=True)
@@ -36,7 +36,7 @@ def load_datasets_rmse():
     }
     rodent_df.rename(index=rename_dict, inplace=True)
 
-    horse_df = pd.read_hdf("data/horse_ratios.h5")["RMSE_iid"]
+    horse_df = pd.read_hdf("data/horse_ratios.h5")[f"{metric.upper()}_iid"]
     horse_unbalanced_zeroshot = horse_df.loc["unbalanced_zeroshot", "1000"]
     horse_unbalanced_zeroshot.index = horse_unbalanced_zeroshot.index.str.replace(
         "_best", ""
@@ -65,27 +65,23 @@ def load_datasets_rmse():
 
     def _reset_df_index(df_):
         df = df_.reset_index()
-        df.columns = ["method", "frac", "shuffle", "rmse"]
+        df.columns = ["method", "frac", "shuffle", metric]
         return df
 
     def _add_zeroshot(df_, vals):
         df = pd.concat([vals.to_frame().reset_index()] * 5)
-        df["frac"] = [
-            frac for frac in list(df_openfield_rmse["frac"].unique()) for _ in range(3)
-        ]
+        df["frac"] = [frac for frac in list(df_["frac"].unique()) for _ in range(3)]
         df["method"] = "zeroshot"
-        df.columns = ["shuffle", "rmse", "frac", "method"]
+        df.columns = ["shuffle", metric, "frac", "method"]
         return pd.concat((df_, df)).reset_index(drop=True)
 
-    df_openfield_rmse = _reset_df_index(openfield_df)
-    df_openfield_rmse = _add_zeroshot(df_openfield_rmse, openfield_unbalanced_zeroshot)
-    df_openfield_rmse["dataset"] = "openfield"
-    df_rodent_rmse = _reset_df_index(rodent_df)
-    df_rodent_rmse = _add_zeroshot(df_rodent_rmse, rodent_unbalanced_zeroshot)
-    df_rodent_rmse["dataset"] = "rodent"
-    df_horse_rmse = _reset_df_index(horse_df)
-    df_horse_rmse = _add_zeroshot(df_horse_rmse, horse_unbalanced_zeroshot)
-    df_horse_rmse["dataset"] = "horse"
-    return pd.concat((df_openfield_rmse, df_rodent_rmse, df_horse_rmse)).reset_index(
-        drop=True
-    )
+    df_openfield = _reset_df_index(openfield_df)
+    df_openfield = _add_zeroshot(df_openfield, openfield_unbalanced_zeroshot)
+    df_openfield["dataset"] = "openfield"
+    df_rodent = _reset_df_index(rodent_df)
+    df_rodent = _add_zeroshot(df_rodent, rodent_unbalanced_zeroshot)
+    df_rodent["dataset"] = "rodent"
+    df_horse = _reset_df_index(horse_df)
+    df_horse = _add_zeroshot(df_horse, horse_unbalanced_zeroshot)
+    df_horse["dataset"] = "horse"
+    return pd.concat((df_openfield, df_rodent, df_horse)).reset_index(drop=True)
