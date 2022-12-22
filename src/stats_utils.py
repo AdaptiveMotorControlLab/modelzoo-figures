@@ -38,7 +38,17 @@ def load_datasets_rmse():
 
     horse_df = pd.read_hdf("data/horse_ratios.h5")["RMSE_iid"]
     horse_unbalanced_zeroshot = horse_df.loc["unbalanced_zeroshot", "1000"]
-    horse_unbalanced_zeroshot.index = horse_unbalanced_zeroshot.index.str.replace('_best', '')
+    horse_unbalanced_zeroshot.index = horse_unbalanced_zeroshot.index.str.replace(
+        "_best", ""
+    )
+    horse_unbalanced_zeroshot.rename(
+        {
+            "shuffle1": "shuffle0",
+            "shuffle2": "shuffle1",
+            "shuffle3": "shuffle2",
+        },
+        inplace=True,
+    )
     drop_list = ["unbalanced_zeroshot", "baseline_dev"]
     horse_df.drop(drop_list, inplace=True)
     rename_dict = {
@@ -47,6 +57,9 @@ def load_datasets_rmse():
         "super_remove_head": "SA + Randomly Initialized Decoder",
         "unbalanced_memory_replay_threshold_0.8_700000": "SA + Memory Replay",
         "unbalanced_naive_finetune_700000": "SA + Naive Fine-tuning",
+        "shuffle1": "shuffle0",
+        "shuffle2": "shuffle1",
+        "shuffle3": "shuffle2",
     }
     horse_df.rename(index=rename_dict, inplace=True)
 
@@ -73,7 +86,6 @@ def load_datasets_rmse():
     df_horse_rmse = _reset_df_index(horse_df)
     df_horse_rmse = _add_zeroshot(df_horse_rmse, horse_unbalanced_zeroshot)
     df_horse_rmse["dataset"] = "horse"
-
     return pd.concat((df_openfield_rmse, df_rodent_rmse, df_horse_rmse)).reset_index(
         drop=True
     )
