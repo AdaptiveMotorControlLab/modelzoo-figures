@@ -31,5 +31,7 @@ anova(mod1, mod2, mod3, mod4, mod5)
 #   geom_line(linewidth=1) +
 #   theme_classic()
 
-emm <- emmeans(mod4, pairwise ~ frac * method)
-contrast(emm, interaction = "pairwise")
+emm <- emmeans(mod4, pairwise ~ method | frac)
+emm$contrasts %>%
+  summary(infer = TRUE)
+eff_size(emm, sigma = sigma(mod4), edf = df.residual(mod4))
