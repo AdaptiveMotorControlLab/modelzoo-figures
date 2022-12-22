@@ -40,7 +40,7 @@ def plot_figure1e():
     font = font_manager.FontProperties(family='Arial',
                                        style='normal', size=10)
     ax.legend(loc='center left', bbox_to_anchor=(1., 0.5), frameon=False, prop=font)
-    fig.savefig('pie_topview.png', dpi=600, bbox_inches='tight', pad_inches=0.05)
+    fig.savefig('Figure1e-pie_topview.png', dpi=600, bbox_inches='tight', pad_inches=0.05)
     # %%
     df = dataset_decomposition.loc['super_quadruped']
     x = df['num_images']
@@ -56,6 +56,6 @@ def plot_figure1e():
     font = font_manager.FontProperties(family='Arial',
                                        style='normal', size=10)
     ax.legend(loc='center left', bbox_to_anchor=(1., 0.5), frameon=False, prop=font)
-    fig.savefig('pie_quadruped.png', dpi=600, bbox_inches='tight', pad_inches=0.05)
+    fig.savefig('Figure1e-pie_quadruped.png', dpi=600, bbox_inches='tight', pad_inches=0.05)
 # %%
 plot_figure1e()

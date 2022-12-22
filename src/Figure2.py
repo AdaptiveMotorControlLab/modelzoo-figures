@@ -177,7 +177,7 @@ def plot_figure2b():
         fontsize='medium',
         scatteryoffsets=[0.5],
     )
-    fig.savefig('summary_plot.png', dpi=600, bbox_inches='tight', pad_inches=0.05)
+    fig.savefig('Figure2b.png', dpi=600, bbox_inches='tight', pad_inches=0.05)
 
 def plot_figure2c():
 
@@ -278,7 +278,7 @@ def plot_figure2c():
         sns.despine(top=True, right=True, ax=ax1)
         sns.despine(top=True, right=True, ax=ax2)
         fig.supxlabel('Number of fine-tuning images', y=0.05, x=0.5125)
-        fig.savefig('horses.png', dpi=800, bbox_inches='tight', pad_inches=0.05)
+        fig.savefig('Figure2c_horse-10.png', dpi=800, bbox_inches='tight', pad_inches=0.05)
 
 
 
@@ -327,7 +327,7 @@ def plot_figure2c():
         ax1.set_ylim(0, 6)
         sns.despine(top=True, right=True, ax=ax1)
         fig.supxlabel('Number of fine-tuning images', y=0.05, x=0.5125)
-        fig.savefig('rodents.png', dpi=600, bbox_inches='tight', pad_inches=0.05)    
+        fig.savefig('Figure2c-iRodent.png', dpi=600, bbox_inches='tight', pad_inches=0.05)    
 
 
     def plot_openfield_data_efficiency():
@@ -383,7 +383,7 @@ def plot_figure2c():
         ax1.set_ylim(0, 25)
         sns.despine(top=True, right=True, ax=ax1)
         fig.supxlabel('Number of fine-tuning images', y=0.05, x=0.5125)
-        fig.savefig('openfield.png', dpi=600, bbox_inches='tight', pad_inches=0.05)    
+        fig.savefig('Figure2c-DLC-openfield.png', dpi=600, bbox_inches='tight', pad_inches=0.05)    
 
 
 
@@ -426,7 +426,7 @@ def plot_figure2i():
         #axs[i].add_artist(scalebar)
         sns.despine(ax=axs[i], top=True, right=True, left=True, bottom=True)
         axs[0].legend(frameon=False, loc='lower right')
-    fig.savefig('video_adaptation_area_plot.png', dpi=800, bbox_inches='tight', pad_inches=0.05)
+    fig.savefig('Figure2i.png', dpi=800, bbox_inches='tight', pad_inches=0.05)
 def plot_figure2f():
 # %%
     with open('../data/ood_mice_zeroshot.pickle', 'rb') as f:
@@ -479,7 +479,7 @@ def plot_figure2f():
         bbox_to_anchor=(0.9, 0.2),
     )
     axes[2].legend().remove()
-    fig.savefig('spatial_pyramid_metrics.png', dpi=600, bbox_inches='tight', pad_inches=0.05)
+    fig.savefig('Figure2f.png', dpi=600, bbox_inches='tight', pad_inches=0.05)
 
 
 

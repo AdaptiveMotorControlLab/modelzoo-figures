@@ -133,7 +133,7 @@ def plot_extended_data_figure3b():
     ax1.spines['top'].set_visible(False)
     
     
-    fig.savefig('HRNet_summary_plot.png', dpi=600, bbox_inches='tight', pad_inches=0.05)
+    fig.savefig('Extended_Data_Figure3b-summary.png', dpi=600, bbox_inches='tight', pad_inches=0.05)
 
 
 plot_extended_data_figure3b()    

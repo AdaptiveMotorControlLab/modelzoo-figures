@@ -68,7 +68,7 @@ def plot_extended_data_fig2d():
         bbox_to_anchor=(0.9, 0.2),
     )
     axes.legend().remove()
-    fig.savefig('spatial_consistency_rodents', dpi=600, bbox_inches='tight', pad_inches=0.05)
+    fig.savefig('Extended_data_Figure2d', dpi=600, bbox_inches='tight', pad_inches=0.05)
 
 
 plot_extended_data_fig2d()
