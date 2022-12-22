@@ -38,6 +38,7 @@ def load_datasets_rmse():
 
     horse_df = pd.read_hdf("data/horse_ratios.h5")["RMSE_iid"]
     horse_unbalanced_zeroshot = horse_df.loc["unbalanced_zeroshot", "1000"]
+    horse_unbalanced_zeroshot.index = horse_unbalanced_zeroshot.index.str.replace('_best', '')
     drop_list = ["unbalanced_zeroshot", "baseline_dev"]
     horse_df.drop(drop_list, inplace=True)
     rename_dict = {
