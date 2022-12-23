@@ -52,8 +52,8 @@ def plot_extended_data_fig2d():
     dfs.append(df_)
 
     vp = sns.violinplot(
-            df_, y='dataset', x='Normalized Error', hue='cond', split=True, hue_order=['with', 'without'],
-            inner="quart", linewidth=1, palette={"without": "b", "with": ".85"},
+            df_, y='dataset', x='Normalized Error', hue='cond', split=True, hue_order=['without', 'with'],
+            inner="quart", linewidth=1, palette={"with": "b", "with": ".85"},
             ax=axes, bw='scott',
         )
     sns.despine(ax=axes, left=True, top=True, right=True)
