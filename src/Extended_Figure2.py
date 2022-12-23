@@ -53,7 +53,7 @@ def plot_extended_data_fig2d():
 
     vp = sns.violinplot(
             df_, y='dataset', x='Normalized Error', hue='cond', split=True, hue_order=['without', 'with'],
-            inner="quart", linewidth=1, palette={"with": "b", "with": ".85"},
+            inner="quart", linewidth=1, palette={"with": "#9cb5d8", "without": ".85"},
             ax=axes, bw='scott',
         )
     sns.despine(ax=axes, left=True, top=True, right=True)
@@ -64,11 +64,11 @@ def plot_extended_data_fig2d():
     handles, labels = axes.get_legend_handles_labels()
     fig.legend(
         handles,
-        ['Without res. consistency', 'With res. consistency'],
+        ['Without resolution consistency', 'With resolution consistency'],
         frameon=False,
         ncol=1,
         # loc='lower right',
-        fontsize='small',
+        fontsize='medium',
         bbox_to_anchor=(0.9, 0.2),
     )
     axes.legend().remove()
