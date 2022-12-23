@@ -2,7 +2,7 @@ import pandas as pd
 
 
 def load_datasets_metrics(metric="rmse"):
-    openfield_df = pd.read_hdf("data/openfield_ratios.h5")[metric.upper()]
+    openfield_df = pd.read_hdf("../data/Figure2/openfield_ratios.h5")[metric.upper()]
     openfield_unbalanced_zeroshot = openfield_df.loc["unbalanced_zeroshot", "600000"]
     drop_list = [
         "balanced_memory_replay_threshold_0.0_750000",
@@ -23,7 +23,7 @@ def load_datasets_metrics(metric="rmse"):
     }
     openfield_df.rename(index=rename_dict, inplace=True)
 
-    rodent_df = pd.read_hdf("data/rodent_ratios.h5")[metric.upper()]
+    rodent_df = pd.read_hdf("../data/Figure2/rodent_ratios.h5")[metric.upper()]
     rodent_unbalanced_zeroshot = rodent_df.loc["unbalanced_zeroshot", "700000"]
     drop_list = ["unbalanced_zeroshot"]
     rodent_df.drop(drop_list, inplace=True)
@@ -36,7 +36,7 @@ def load_datasets_metrics(metric="rmse"):
     }
     rodent_df.rename(index=rename_dict, inplace=True)
 
-    horse_df = pd.read_hdf("data/horse_ratios.h5")[
+    horse_df = pd.read_hdf("../data/Figure2/horse_ratios.h5")[
         [f"{metric.upper()}_iid", f"{metric.upper()}_ood"]
     ]
     horse_unbalanced_zeroshot = horse_df.loc["unbalanced_zeroshot", "1000"]
@@ -96,3 +96,5 @@ def load_datasets_metrics(metric="rmse"):
     return pd.concat((df_openfield, df_rodent, df_horse, df_horse_ood)).reset_index(
         drop=True
     )
+#%%
+load_datasets_metrics()

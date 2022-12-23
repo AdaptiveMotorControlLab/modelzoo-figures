@@ -12,6 +12,7 @@ format:
 build/%.ipynb:
 	echo $% $@
 	mkdir -p build
+	mkdir -p figures
 	python -m jupytext src/$*.py --from py --to ipynb --output build/$*.ipynb
 
 figures/%.ipynb: build/%.ipynb

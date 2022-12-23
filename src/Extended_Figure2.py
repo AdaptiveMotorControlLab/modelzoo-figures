@@ -12,8 +12,8 @@ warnings.filterwarnings('ignore')
 
 
 def plot_extended_data_fig2d():
-    with_sp = pd.read_hdf('../data/rodent_memory_replay_with_sp.h5')
-    without_sp = pd.read_hdf('../data/rodent_memory_replay_without_sp.h5')
+    with_sp = pd.read_hdf('../data/Extended_Figure2/rodent_memory_replay_with_sp.h5')
+    without_sp = pd.read_hdf('../data/Extended_Figure2/rodent_memory_replay_without_sp.h5')
     with_sp_NE = with_sp['ne_nonreduced'][0]
     with_sp_NE = np.nanmean(with_sp_NE, axis = (1,2))
     without_sp_NE = without_sp['ne_nonreduced'][0]

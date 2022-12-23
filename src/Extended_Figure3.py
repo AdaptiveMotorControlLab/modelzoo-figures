@@ -17,7 +17,7 @@ def plot_extended_data_figure3b():
     zeroshot_topdown_quadruped_irodent = ''
 
 
-    with open('../data/HRNet_summary_plot.json', 'r') as f:
+    with open('../data/Extended_Figure3/HRNet_summary_plot.json', 'r') as f:
         results = json.load(f)
 
 

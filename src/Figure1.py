@@ -4,7 +4,7 @@ import pandas as pd
 
 
 def plot_figure1e():
-    dataset_decomposition = pd.read_hdf('../data/dataset_decomposition.h5')
+    dataset_decomposition = pd.read_hdf('../data/Figure1/dataset_decomposition.h5')
 
     print (dataset_decomposition)
     rename_dict = {'swimming_ole': 'Kiehn Lab Swimming',
@@ -20,7 +20,7 @@ def plot_figure1e():
                    'horse-10': 'Horse-10',
                    'iRodents': 'iRodent',
                    'stanforddogs': 'StanfordDogs',
-                  }
+                   }
 
     dataset_decomposition.rename(index=rename_dict, inplace=True)
     df = dataset_decomposition.loc['super_topview']
@@ -36,12 +36,30 @@ def plot_figure1e():
            colors=colors, labeldistance=None,
            wedgeprops={'linewidth': 1, "edgecolor":"w"},
            textprops={'fontsize': 'medium', 'color': 'w', 'font': 'Arial'},
-    )
+           )
     font = font_manager.FontProperties(family='Arial',
                                        style='normal', size=10)
     ax.legend(loc='center left', bbox_to_anchor=(1., 0.5), frameon=False, prop=font)
     fig.savefig('Figure1e-pie_topview.png', dpi=600, bbox_inches='tight', pad_inches=0.05)
     # %%
+    dataset_decomposition = pd.read_hdf('../data/Figure1/dataset_decomposition.h5')
+    print (dataset_decomposition)
+    rename_dict = {'swimming_ole': 'Kiehn Lab Swimming',
+                   'openfield_ole': 'Kiehn Lab Openfield',
+                   'treadmill_ole': 'Kiehn Lab Treadmill',
+                   'MackenzieMausHaus': 'MausHaus',
+                   'daniel3mouse': 'TriMouse',
+                   'dlc-openfield': 'DLC Openfield',
+                   'TwoWhiteMice_GoldenLab': 'WhiteMice',
+                   'ChanLab': 'BlackMice',
+                   'animalpose': 'AnimalPose',
+                   'cheetah': 'AcinoSet',
+                   'horse-10': 'Horse-10',
+                   'iRodents': 'iRodent',
+                   'stanforddogs': 'StanfordDogs',
+                   }
+
+    dataset_decomposition.rename(index=rename_dict, inplace=True)
     df = dataset_decomposition.loc['super_quadruped']
     x = df['num_images']
     labels = df.index.to_list()
@@ -52,7 +70,7 @@ def plot_figure1e():
            colors=colors, labeldistance=None,
            wedgeprops={'linewidth': 1, "edgecolor":"w"},
            textprops={'fontsize': 'medium', 'color': 'w', 'font': 'Arial'},
-    )
+           )
     font = font_manager.FontProperties(family='Arial',
                                        style='normal', size=10)
     ax.legend(loc='center left', bbox_to_anchor=(1., 0.5), frameon=False, prop=font)
