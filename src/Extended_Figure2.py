@@ -1,3 +1,7 @@
+# # Extended Data Figure 2 - Ye et al. 2023
+
+# - import dependencies and load the data
+
 import matplotlib.pyplot as plt
 import numpy as np
 import sys
@@ -48,7 +52,7 @@ def plot_extended_data_fig2d():
     dfs.append(df_)
 
     vp = sns.violinplot(
-            df_, y='dataset', x='Normalized Error', hue='cond', split=True, hue_order=['without', 'with'],
+            df_, y='dataset', x='Normalized Error', hue='cond', split=True, hue_order=['with', 'without'],
             inner="quart", linewidth=1, palette={"without": "b", "with": ".85"},
             ax=axes, bw='scott',
         )
@@ -72,3 +76,5 @@ def plot_extended_data_fig2d():
 
 
 plot_extended_data_fig2d()
+
+
