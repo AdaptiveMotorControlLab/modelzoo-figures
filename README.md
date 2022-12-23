@@ -1,8 +1,10 @@
 # DeepLabCut Modelzoo - Figures and Data
 
-Work in progress -- Figures for the modelzoo paper.
+Figures for the modelzoo paper.
 
 ## Quickstart
+
+Please add `.py` files into `src`; these should be made by downloading your `ipython notebook` to a `.py` file.
 
 Make sure you are in a python>=3.8 environment that supports the `pip install` command (e.g., a virtual environment or a conda environment). Install dependencies, then render of all figures using:
 
