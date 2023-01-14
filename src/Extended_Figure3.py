@@ -1,3 +1,7 @@
+# # Extended Data Figure 3 - Ye et al. 2023
+
+# - import dependencies and load the data
+
 import matplotlib.pyplot as plt
 import matplotlib
 plt.rcParams["figure.figsize"] = (13,10)
@@ -6,7 +10,6 @@ import json
 mpl.rcParams['font.size'] = 25
 plt.rcParams["figure.autolayout"] = True
 plt.rcParams["figure.autolayout"] = True
-
 
 
 def plot_extended_data_figure3b():
@@ -126,14 +129,16 @@ def plot_extended_data_figure3b():
                          'pseudo labeled',
                          '1% data'
                          ])
-    ax1.legend(bbox_to_anchor=(1.5, 0.8))
+    ax1.legend(bbox_to_anchor=(3, 0.8))
     ax1.set_ylabel('mAP')
 
     ax1.spines['right'].set_visible(False)
     ax1.spines['top'].set_visible(False)
     
     
-    fig.savefig('Extended_Data_Figure3b-summary.png', dpi=600, bbox_inches='tight', pad_inches=0.05)
+    fig.savefig('Extended_Data_Figure3b-summary.png', dpi=600, bbox_inches='tight', pad_inches=0.5)
 
 
 plot_extended_data_figure3b()    
+
+

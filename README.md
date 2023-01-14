@@ -1,6 +1,11 @@
-# DeepLabCut Modelzoo - Figures and Data
+# The DeepLabCut Model Zoo: SuperAnimal models pretrained for plug-and-play animal pose estimation
 
-Figures for the modelzoo paper.
+![dlczoo](https://user-images.githubusercontent.com/28102185/209353843-cabc66e4-ab19-49df-8d46-5f1ddc9b5abe.png)
+
+
+## Figures and Data
+
+Figures and data supporting Ye et al. 2023.
 
 ## Quickstart
 
