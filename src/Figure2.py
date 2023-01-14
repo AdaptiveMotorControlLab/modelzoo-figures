@@ -322,7 +322,7 @@ def plot_figure2c():
 
         dataset_size = dataset_decomposition.loc['super_topview'].loc['DLC_Openfield'].loc['num_images']
         unbalanced_zeroshot = temp.loc['unbalanced_zeroshot', '600000']  # .mean(axis=0)
-
+        print ('openfield data efficiency')
         print(unbalanced_zeroshot.mean())
 
         drop_list = ['balanced_memory_replay_threshold_0.0_750000',
