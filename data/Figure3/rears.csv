@@ -1,0 +1,481 @@
+;f1;action;method;video
+0;0.08996832101372756;Supported Rears;Sturman + CEBRA;5
+1;0.8606346483704973;Supported Rears;Sturman + CEBRA;6
+2;0.8561473369835739;Supported Rears;Sturman + CEBRA;11
+3;0.8598452278589853;Supported Rears;Sturman + CEBRA;12
+4;0.10221205186880244;Supported Rears;Sturman + CEBRA;14
+5;0.8541371636657902;Supported Rears;Sturman + CEBRA;15
+6;0.870309745656006;Supported Rears;Sturman + CEBRA;16
+7;0.8154385964912281;Supported Rears;Sturman + CEBRA;23
+8;0.8467532467532467;Supported Rears;Sturman + CEBRA;24
+9;0.8544552762100223;Supported Rears;Sturman + CEBRA;38
+10;0.8665568369028006;Supported Rears;Sturman + CEBRA;39
+11;0.8583787850291517;Supported Rears;Sturman + CEBRA;41
+12;0.8652155110278219;Supported Rears;Sturman + CEBRA;43
+13;0.8732782369146006;Supported Rears;Sturman + CEBRA;44
+14;0.9057377049180328;Supported Rears;Sturman + CEBRA;49
+15;0.8732943469785576;Supported Rears;Sturman + CEBRA;50
+16;0.8480546792849631;Supported Rears;Sturman + CEBRA;51
+17;0.8808882907133245;Supported Rears;Sturman + CEBRA;52
+18;0.811415349016583;Supported Rears;Sturman + CEBRA;54
+19;0.03354008729611762;Supported Rears;Sturman + CEBRA;58
+20;0.8086734693877551;Supported Rears;Sturman + CEBRA;5
+21;0.8251165072357126;Supported Rears;Sturman + CEBRA;6
+22;0.7743575261225643;Supported Rears;Sturman + CEBRA;11
+23;0.8132438866046311;Supported Rears;Sturman + CEBRA;12
+24;0.11648129423660263;Supported Rears;Sturman + CEBRA;14
+25;0.813302752293578;Supported Rears;Sturman + CEBRA;15
+26;0.8385076963214192;Supported Rears;Sturman + CEBRA;16
+27;0.8164872669992123;Supported Rears;Sturman + CEBRA;23
+28;0.15655017371755567;Supported Rears;Sturman + CEBRA;24
+29;0.810464897421419;Supported Rears;Sturman + CEBRA;38
+30;0.09596562425399856;Supported Rears;Sturman + CEBRA;39
+31;0.05136795086543831;Supported Rears;Sturman + CEBRA;41
+32;0.8474687705456936;Supported Rears;Sturman + CEBRA;43
+33;0.8371792106965712;Supported Rears;Sturman + CEBRA;44
+34;0.037037037037037035;Supported Rears;Sturman + CEBRA;49
+35;0.8529503590384014;Supported Rears;Sturman + CEBRA;50
+36;0.8439450686641697;Supported Rears;Sturman + CEBRA;51
+37;0.8590554109334327;Supported Rears;Sturman + CEBRA;52
+38;0.7203707790774663;Supported Rears;Sturman + CEBRA;54
+39;0.8942731277533039;Supported Rears;Sturman + CEBRA;58
+40;0.8489567113048895;Supported Rears;Sturman + CEBRA;5
+41;0.8753734528382415;Supported Rears;Sturman + CEBRA;6
+42;0.8743874129481558;Supported Rears;Sturman + CEBRA;11
+43;0.8525598769501208;Supported Rears;Sturman + CEBRA;12
+44;0.04412665985699693;Supported Rears;Sturman + CEBRA;14
+45;0.851543140346925;Supported Rears;Sturman + CEBRA;15
+46;0.8741044012282498;Supported Rears;Sturman + CEBRA;16
+47;0.8342273307790549;Supported Rears;Sturman + CEBRA;23
+48;0.7907503967354342;Supported Rears;Sturman + CEBRA;24
+49;0.8723068838675775;Supported Rears;Sturman + CEBRA;38
+50;0.8450395083406498;Supported Rears;Sturman + CEBRA;39
+51;0.8827415359207268;Supported Rears;Sturman + CEBRA;41
+52;0.8526516820919642;Supported Rears;Sturman + CEBRA;43
+53;0.8517465475223396;Supported Rears;Sturman + CEBRA;44
+54;0.001078167115902965;Supported Rears;Sturman + CEBRA;49
+55;0.8711031175059953;Supported Rears;Sturman + CEBRA;50
+56;0.8588072122052705;Supported Rears;Sturman + CEBRA;51
+57;0.8994983566856944;Supported Rears;Sturman + CEBRA;52
+58;0.7799052913320978;Supported Rears;Sturman + CEBRA;54
+59;0.8918600078647266;Supported Rears;Sturman + CEBRA;58
+60;0.07444466680008004;Unsupported Rears;Sturman + CEBRA;5
+61;0.45945945945945943;Unsupported Rears;Sturman + CEBRA;6
+62;0.5665188470066519;Unsupported Rears;Sturman + CEBRA;11
+63;0.5940014630577909;Unsupported Rears;Sturman + CEBRA;12
+64;0.0261139896373057;Unsupported Rears;Sturman + CEBRA;14
+65;0.5588740130449708;Unsupported Rears;Sturman + CEBRA;15
+66;0.5699848408287014;Unsupported Rears;Sturman + CEBRA;16
+67;0.1346153846153846;Unsupported Rears;Sturman + CEBRA;23
+68;0.6288056206088993;Unsupported Rears;Sturman + CEBRA;24
+69;0.5983118172790466;Unsupported Rears;Sturman + CEBRA;38
+70;0.682842287694974;Unsupported Rears;Sturman + CEBRA;39
+71;0.45890410958904104;Unsupported Rears;Sturman + CEBRA;41
+72;0.19476439790575917;Unsupported Rears;Sturman + CEBRA;43
+73;0.4843509492047204;Unsupported Rears;Sturman + CEBRA;44
+74;0.6883365200764818;Unsupported Rears;Sturman + CEBRA;49
+75;0.5135444486837085;Unsupported Rears;Sturman + CEBRA;50
+76;0.38661710037174724;Unsupported Rears;Sturman + CEBRA;51
+77;0.4244575936883629;Unsupported Rears;Sturman + CEBRA;52
+78;0.6121290322580645;Unsupported Rears;Sturman + CEBRA;54
+79;0.03310276679841897;Unsupported Rears;Sturman + CEBRA;58
+80;0.3142857142857143;Unsupported Rears;Sturman + CEBRA;5
+81;0.32413793103448285;Unsupported Rears;Sturman + CEBRA;6
+82;0.46232294617563735;Unsupported Rears;Sturman + CEBRA;11
+83;0.4083840432724814;Unsupported Rears;Sturman + CEBRA;12
+84;0.03730976926853215;Unsupported Rears;Sturman + CEBRA;14
+85;0.5417933130699089;Unsupported Rears;Sturman + CEBRA;15
+86;0.47815820543093274;Unsupported Rears;Sturman + CEBRA;16
+87;0.225;Unsupported Rears;Sturman + CEBRA;23
+88;0.012941493664060392;Unsupported Rears;Sturman + CEBRA;24
+89;0.5508545811151584;Unsupported Rears;Sturman + CEBRA;38
+90;0.028152141359688528;Unsupported Rears;Sturman + CEBRA;39
+91;0.04902576995600252;Unsupported Rears;Sturman + CEBRA;41
+92;0.3427495291902072;Unsupported Rears;Sturman + CEBRA;43
+93;0.5932415519399251;Unsupported Rears;Sturman + CEBRA;44
+94;0.03577131906739061;Unsupported Rears;Sturman + CEBRA;49
+95;0.45796802475502835;Unsupported Rears;Sturman + CEBRA;50
+96;0.4815970056144729;Unsupported Rears;Sturman + CEBRA;51
+97;0.3943262411347518;Unsupported Rears;Sturman + CEBRA;52
+98;0.5332948976650331;Unsupported Rears;Sturman + CEBRA;54
+99;0.6729112026976396;Unsupported Rears;Sturman + CEBRA;58
+100;0.3713405238828968;Unsupported Rears;Sturman + CEBRA;5
+101;0.3443780554046714;Unsupported Rears;Sturman + CEBRA;6
+102;0.6136567834681043;Unsupported Rears;Sturman + CEBRA;11
+103;0.6227573182247403;Unsupported Rears;Sturman + CEBRA;12
+104;0.05275181723779854;Unsupported Rears;Sturman + CEBRA;14
+105;0.596638655462185;Unsupported Rears;Sturman + CEBRA;15
+106;0.5095095095095096;Unsupported Rears;Sturman + CEBRA;16
+107;0.2675324675324675;Unsupported Rears;Sturman + CEBRA;23
+108;0.5872416092464993;Unsupported Rears;Sturman + CEBRA;24
+109;0.674306669722668;Unsupported Rears;Sturman + CEBRA;38
+110;0.6370679380214541;Unsupported Rears;Sturman + CEBRA;39
+111;0.568724279835391;Unsupported Rears;Sturman + CEBRA;41
+112;0.27309236947791166;Unsupported Rears;Sturman + CEBRA;43
+113;0.5450716090985679;Unsupported Rears;Sturman + CEBRA;44
+114;0.03939075630252101;Unsupported Rears;Sturman + CEBRA;49
+115;0.5952480200083368;Unsupported Rears;Sturman + CEBRA;50
+116;0.3624934520691462;Unsupported Rears;Sturman + CEBRA;51
+117;0.46428571428571436;Unsupported Rears;Sturman + CEBRA;52
+118;0.5741919063374903;Unsupported Rears;Sturman + CEBRA;54
+119;0.5659787367104441;Unsupported Rears;Sturman + CEBRA;58
+0;0.10723742277140336;Supported Rears;SuperAnimal + CEBRA;5
+1;0.8271144278606964;Supported Rears;SuperAnimal + CEBRA;6
+2;0.8489244622311155;Supported Rears;SuperAnimal + CEBRA;11
+3;0.8461069323033136;Supported Rears;SuperAnimal + CEBRA;12
+4;0.07057906024566192;Supported Rears;SuperAnimal + CEBRA;14
+5;0.8570851836899475;Supported Rears;SuperAnimal + CEBRA;15
+6;0.8384341637010677;Supported Rears;SuperAnimal + CEBRA;16
+7;0.8178403755868544;Supported Rears;SuperAnimal + CEBRA;23
+8;0.8406282722513089;Supported Rears;SuperAnimal + CEBRA;24
+9;0.8510494245091401;Supported Rears;SuperAnimal + CEBRA;38
+10;0.8345465276411569;Supported Rears;SuperAnimal + CEBRA;39
+11;0.8251854669963856;Supported Rears;SuperAnimal + CEBRA;41
+12;0.8016651798988997;Supported Rears;SuperAnimal + CEBRA;43
+13;0.8338604651162791;Supported Rears;SuperAnimal + CEBRA;44
+14;0.8745898651111922;Supported Rears;SuperAnimal + CEBRA;49
+15;0.8455629139072847;Supported Rears;SuperAnimal + CEBRA;50
+16;0.7948253557567917;Supported Rears;SuperAnimal + CEBRA;51
+17;0.8890278211941232;Supported Rears;SuperAnimal + CEBRA;52
+18;0.7759282970550577;Supported Rears;SuperAnimal + CEBRA;54
+19;0.009885419006964725;Supported Rears;SuperAnimal + CEBRA;58
+20;0.8100851342501638;Supported Rears;SuperAnimal + CEBRA;5
+21;0.7715930902111325;Supported Rears;SuperAnimal + CEBRA;6
+22;0.7618522601984566;Supported Rears;SuperAnimal + CEBRA;11
+23;0.7856981217470016;Supported Rears;SuperAnimal + CEBRA;12
+24;0.15041128084606345;Supported Rears;SuperAnimal + CEBRA;14
+25;0.7897945360126438;Supported Rears;SuperAnimal + CEBRA;15
+26;0.8142644873699851;Supported Rears;SuperAnimal + CEBRA;16
+27;0.7535452322738386;Supported Rears;SuperAnimal + CEBRA;23
+28;0.17208256693235235;Supported Rears;SuperAnimal + CEBRA;24
+29;0.7897398843930636;Supported Rears;SuperAnimal + CEBRA;38
+30;0.32231404958677684;Supported Rears;SuperAnimal + CEBRA;39
+31;0.07210845111047014;Supported Rears;SuperAnimal + CEBRA;41
+32;0.8255543495115523;Supported Rears;SuperAnimal + CEBRA;43
+33;0.8060701616081986;Supported Rears;SuperAnimal + CEBRA;44
+34;0.0855119825708061;Supported Rears;SuperAnimal + CEBRA;49
+35;0.8140288829944002;Supported Rears;SuperAnimal + CEBRA;50
+36;0.7819548872180452;Supported Rears;SuperAnimal + CEBRA;51
+37;0.8555839727195228;Supported Rears;SuperAnimal + CEBRA;52
+38;0.7419948472580054;Supported Rears;SuperAnimal + CEBRA;54
+39;0.8573170731707317;Supported Rears;SuperAnimal + CEBRA;58
+40;0.838740157480315;Supported Rears;SuperAnimal + CEBRA;5
+41;0.810299295774648;Supported Rears;SuperAnimal + CEBRA;6
+42;0.8361439718097156;Supported Rears;SuperAnimal + CEBRA;11
+43;0.8502242152466367;Supported Rears;SuperAnimal + CEBRA;12
+44;0.06808672499049068;Supported Rears;SuperAnimal + CEBRA;14
+45;0.8389084507042255;Supported Rears;SuperAnimal + CEBRA;15
+46;0.8678304239401495;Supported Rears;SuperAnimal + CEBRA;16
+47;0.7637151106833494;Supported Rears;SuperAnimal + CEBRA;23
+48;0.8396910835478586;Supported Rears;SuperAnimal + CEBRA;24
+49;0.8750220965175889;Supported Rears;SuperAnimal + CEBRA;38
+50;0.8205016357688113;Supported Rears;SuperAnimal + CEBRA;39
+51;0.8691144708423326;Supported Rears;SuperAnimal + CEBRA;41
+52;0.7689458249729897;Supported Rears;SuperAnimal + CEBRA;43
+53;0.8423457730388424;Supported Rears;SuperAnimal + CEBRA;44
+54;0.018719959524411838;Supported Rears;SuperAnimal + CEBRA;49
+55;0.8419263456090652;Supported Rears;SuperAnimal + CEBRA;50
+56;0.7641485275288092;Supported Rears;SuperAnimal + CEBRA;51
+57;0.8937862468931235;Supported Rears;SuperAnimal + CEBRA;52
+58;0.823529411764706;Supported Rears;SuperAnimal + CEBRA;54
+59;0.8865164096480821;Supported Rears;SuperAnimal + CEBRA;58
+60;0.11375507835171213;Unsupported Rears;SuperAnimal + CEBRA;5
+61;0.2693707748309932;Unsupported Rears;SuperAnimal + CEBRA;6
+62;0.5300387596899225;Unsupported Rears;SuperAnimal + CEBRA;11
+63;0.44024514811031656;Unsupported Rears;SuperAnimal + CEBRA;12
+64;0.056285178236397754;Unsupported Rears;SuperAnimal + CEBRA;14
+65;0.5095753538717736;Unsupported Rears;SuperAnimal + CEBRA;15
+66;0.44395116537180906;Unsupported Rears;SuperAnimal + CEBRA;16
+67;0.3536977491961415;Unsupported Rears;SuperAnimal + CEBRA;23
+68;0.6166263115415657;Unsupported Rears;SuperAnimal + CEBRA;24
+69;0.4832833756052571;Unsupported Rears;SuperAnimal + CEBRA;38
+70;0.5570752235665439;Unsupported Rears;SuperAnimal + CEBRA;39
+71;0.37669592976855554;Unsupported Rears;SuperAnimal + CEBRA;41
+72;0.18382352941176475;Unsupported Rears;SuperAnimal + CEBRA;43
+73;0.5165441176470588;Unsupported Rears;SuperAnimal + CEBRA;44
+74;0.5007235890014472;Unsupported Rears;SuperAnimal + CEBRA;49
+75;0.5250521920668059;Unsupported Rears;SuperAnimal + CEBRA;50
+76;0.37240713941148096;Unsupported Rears;SuperAnimal + CEBRA;51
+77;0.4738249904470768;Unsupported Rears;SuperAnimal + CEBRA;52
+78;0.5292242295430394;Unsupported Rears;SuperAnimal + CEBRA;54
+79;0.007102993404363268;Unsupported Rears;SuperAnimal + CEBRA;58
+80;0.4075067024128687;Unsupported Rears;SuperAnimal + CEBRA;5
+81;0.2585034013605442;Unsupported Rears;SuperAnimal + CEBRA;6
+82;0.48663468128855386;Unsupported Rears;SuperAnimal + CEBRA;11
+83;0.3111876075731498;Unsupported Rears;SuperAnimal + CEBRA;12
+84;0.01827748546109111;Unsupported Rears;SuperAnimal + CEBRA;14
+85;0.47520513735283626;Unsupported Rears;SuperAnimal + CEBRA;15
+86;0.5069284064665127;Unsupported Rears;SuperAnimal + CEBRA;16
+87;0.23395149786019973;Unsupported Rears;SuperAnimal + CEBRA;23
+88;0.004490597810833568;Unsupported Rears;SuperAnimal + CEBRA;24
+89;0.38036449147560264;Unsupported Rears;SuperAnimal + CEBRA;38
+90;0.013475177304964538;Unsupported Rears;SuperAnimal + CEBRA;39
+91;0.023647650014779784;Unsupported Rears;SuperAnimal + CEBRA;41
+92;0.18404907975460122;Unsupported Rears;SuperAnimal + CEBRA;43
+93;0.3586448598130841;Unsupported Rears;SuperAnimal + CEBRA;44
+94;0.022818791946308724;Unsupported Rears;SuperAnimal + CEBRA;49
+95;0.47339246119733924;Unsupported Rears;SuperAnimal + CEBRA;50
+96;0.37480148226574905;Unsupported Rears;SuperAnimal + CEBRA;51
+97;0.40771895101434935;Unsupported Rears;SuperAnimal + CEBRA;52
+98;0.2681802057467187;Unsupported Rears;SuperAnimal + CEBRA;54
+99;0.4628623188405797;Unsupported Rears;SuperAnimal + CEBRA;58
+100;0.37258924907673363;Unsupported Rears;SuperAnimal + CEBRA;5
+101;0.3105765829501238;Unsupported Rears;SuperAnimal + CEBRA;6
+102;0.5933630510153541;Unsupported Rears;SuperAnimal + CEBRA;11
+103;0.5718570357410647;Unsupported Rears;SuperAnimal + CEBRA;12
+104;0.016803438843298164;Unsupported Rears;SuperAnimal + CEBRA;14
+105;0.5559588626739261;Unsupported Rears;SuperAnimal + CEBRA;15
+106;0.531054131054131;Unsupported Rears;SuperAnimal + CEBRA;16
+107;0.29853479853479853;Unsupported Rears;SuperAnimal + CEBRA;23
+108;0.5827368421052632;Unsupported Rears;SuperAnimal + CEBRA;24
+109;0.5479521750190791;Unsupported Rears;SuperAnimal + CEBRA;38
+110;0.6448143405889885;Unsupported Rears;SuperAnimal + CEBRA;39
+111;0.5206552706552706;Unsupported Rears;SuperAnimal + CEBRA;41
+112;0.23185840707964606;Unsupported Rears;SuperAnimal + CEBRA;43
+113;0.4632019532612487;Unsupported Rears;SuperAnimal + CEBRA;44
+114;0.03625730994152047;Unsupported Rears;SuperAnimal + CEBRA;49
+115;0.5259391771019678;Unsupported Rears;SuperAnimal + CEBRA;50
+116;0.4181384248210024;Unsupported Rears;SuperAnimal + CEBRA;51
+117;0.4835164835164835;Unsupported Rears;SuperAnimal + CEBRA;52
+118;0.5649112925936356;Unsupported Rears;SuperAnimal + CEBRA;54
+119;0.4618659098971266;Unsupported Rears;SuperAnimal + CEBRA;58
+0;0.8283582089552238;Supported Rears;SuperAnimal;11
+1;0.833406981882457;Supported Rears;SuperAnimal;12
+2;0.08834261570962167;Supported Rears;SuperAnimal;14
+3;0.8149637972646822;Supported Rears;SuperAnimal;15
+4;0.8485889570552146;Supported Rears;SuperAnimal;16
+5;0.8041974719771047;Supported Rears;SuperAnimal;23
+6;0.8133818843878016;Supported Rears;SuperAnimal;24
+7;0.7758322108908987;Supported Rears;SuperAnimal;38
+8;0.7888593078025804;Supported Rears;SuperAnimal;39
+9;0.8472886762360446;Supported Rears;SuperAnimal;41
+10;0.8054070112893642;Supported Rears;SuperAnimal;43
+11;0.8001730103806229;Supported Rears;SuperAnimal;44
+12;0.8662105663245913;Supported Rears;SuperAnimal;49
+13;0.837851929092805;Supported Rears;SuperAnimal;50
+14;0.779063915450428;Supported Rears;SuperAnimal;51
+15;0.9008264462809917;Supported Rears;SuperAnimal;52
+16;0.7891181303633374;Supported Rears;SuperAnimal;54
+17;0.009525969607620775;Supported Rears;SuperAnimal;58
+18;0.11447368421052634;Supported Rears;SuperAnimal;5
+19;0.8111495246326708;Supported Rears;SuperAnimal;6
+20;0.7289069295447955;Supported Rears;SuperAnimal;11
+21;0.7028228495221159;Supported Rears;SuperAnimal;12
+22;0.12330705478067513;Supported Rears;SuperAnimal;14
+23;0.7472852912142153;Supported Rears;SuperAnimal;15
+24;0.7664702731655062;Supported Rears;SuperAnimal;16
+25;0.6082503556187767;Supported Rears;SuperAnimal;23
+26;0.19813009747364232;Supported Rears;SuperAnimal;24
+27;0.8069896743447179;Supported Rears;SuperAnimal;38
+28;0.25312634756360497;Supported Rears;SuperAnimal;39
+29;0.09835133598635588;Supported Rears;SuperAnimal;41
+30;0.58539435248296;Supported Rears;SuperAnimal;43
+31;0.7513930561508786;Supported Rears;SuperAnimal;44
+32;0.0508525276697577;Supported Rears;SuperAnimal;49
+33;0.7613329330531372;Supported Rears;SuperAnimal;50
+34;0.7539298669891172;Supported Rears;SuperAnimal;51
+35;0.7862277714718123;Supported Rears;SuperAnimal;52
+36;0.6936079269477365;Supported Rears;SuperAnimal;54
+37;0.6745079212674028;Supported Rears;SuperAnimal;58
+38;0.7425299695831098;Supported Rears;SuperAnimal;5
+39;0.7719472767968167;Supported Rears;SuperAnimal;6
+40;0.8538189175518464;Supported Rears;SuperAnimal;11
+41;0.8306085376930065;Supported Rears;SuperAnimal;12
+42;0.06566932193510783;Supported Rears;SuperAnimal;14
+43;0.8453344695355773;Supported Rears;SuperAnimal;15
+44;0.8589838909541512;Supported Rears;SuperAnimal;16
+45;0.7750933997509339;Supported Rears;SuperAnimal;23
+46;0.8175708113298128;Supported Rears;SuperAnimal;24
+47;0.8776747503566332;Supported Rears;SuperAnimal;38
+48;0.7911843276936776;Supported Rears;SuperAnimal;39
+49;0.8757062146892656;Supported Rears;SuperAnimal;41
+50;0.7584836441455212;Supported Rears;SuperAnimal;43
+51;0.8474642647346778;Supported Rears;SuperAnimal;44
+52;0.02760351317440401;Supported Rears;SuperAnimal;49
+53;0.8573033707865169;Supported Rears;SuperAnimal;50
+54;0.8191460429698124;Supported Rears;SuperAnimal;51
+55;0.8819000819000818;Supported Rears;SuperAnimal;52
+56;0.858763069289385;Supported Rears;SuperAnimal;54
+57;0.9057984973993451;Supported Rears;SuperAnimal;58
+58;0.8455794504181601;Supported Rears;SuperAnimal;5
+59;0.8192299325647162;Supported Rears;SuperAnimal;6
+60;0.5322294500295683;Unsupported Rears;SuperAnimal;11
+61;0.461616934455496;Unsupported Rears;SuperAnimal;12
+62;0.05052071792599159;Unsupported Rears;SuperAnimal;14
+63;0.5129337539432176;Unsupported Rears;SuperAnimal;15
+64;0.46540880503144655;Unsupported Rears;SuperAnimal;16
+65;0.37126865671641796;Unsupported Rears;SuperAnimal;23
+66;0.622445187662579;Unsupported Rears;SuperAnimal;24
+67;0.4901445466491459;Unsupported Rears;SuperAnimal;38
+68;0.5603971318257033;Unsupported Rears;SuperAnimal;39
+69;0.44344630461412826;Unsupported Rears;SuperAnimal;41
+70;0.12020275162925417;Unsupported Rears;SuperAnimal;43
+71;0.45417680454176806;Unsupported Rears;SuperAnimal;44
+72;0.46672914714151825;Unsupported Rears;SuperAnimal;49
+73;0.5154639175257733;Unsupported Rears;SuperAnimal;50
+74;0.5069393718042366;Unsupported Rears;SuperAnimal;51
+75;0.37781484570475393;Unsupported Rears;SuperAnimal;52
+76;0.5097468722723305;Unsupported Rears;SuperAnimal;54
+77;0.030087527352297597;Unsupported Rears;SuperAnimal;58
+78;0.10562473164448262;Unsupported Rears;SuperAnimal;5
+79;0.20912951167728236;Unsupported Rears;SuperAnimal;6
+80;0.42865074958356464;Unsupported Rears;SuperAnimal;11
+81;0.22337125129265772;Unsupported Rears;SuperAnimal;12
+82;0.03525901817195552;Unsupported Rears;SuperAnimal;14
+83;0.48247552889169565;Unsupported Rears;SuperAnimal;15
+84;0.44560124934929723;Unsupported Rears;SuperAnimal;16
+85;0.24670184696569922;Unsupported Rears;SuperAnimal;23
+86;0.05402394876079088;Unsupported Rears;SuperAnimal;24
+87;0.4164772727272727;Unsupported Rears;SuperAnimal;38
+88;0.05745292052345994;Unsupported Rears;SuperAnimal;39
+89;0.0837118754055808;Unsupported Rears;SuperAnimal;41
+90;0.007900677200902933;Unsupported Rears;SuperAnimal;43
+91;0.31111111111111117;Unsupported Rears;SuperAnimal;44
+92;0.11724565756823822;Unsupported Rears;SuperAnimal;49
+93;0.37398373983739835;Unsupported Rears;SuperAnimal;50
+94;0.27901077996195306;Unsupported Rears;SuperAnimal;51
+95;0.2882882882882883;Unsupported Rears;SuperAnimal;52
+96;0.25036075036075034;Unsupported Rears;SuperAnimal;54
+97;0.28118393234672306;Unsupported Rears;SuperAnimal;58
+98;0.3967236467236468;Unsupported Rears;SuperAnimal;5
+99;0.19441210710128057;Unsupported Rears;SuperAnimal;6
+100;0.5747950819672132;Unsupported Rears;SuperAnimal;11
+101;0.5569935291189646;Unsupported Rears;SuperAnimal;12
+102;0.03931734715921365;Unsupported Rears;SuperAnimal;14
+103;0.6012972148035102;Unsupported Rears;SuperAnimal;15
+104;0.5098507462686567;Unsupported Rears;SuperAnimal;16
+105;0.31539424280350437;Unsupported Rears;SuperAnimal;23
+106;0.5989075302380024;Unsupported Rears;SuperAnimal;24
+107;0.47862796833773086;Unsupported Rears;SuperAnimal;38
+108;0.6384823848238483;Unsupported Rears;SuperAnimal;39
+109;0.4634703196347032;Unsupported Rears;SuperAnimal;41
+110;0.1506961506961507;Unsupported Rears;SuperAnimal;43
+111;0.4581458145814581;Unsupported Rears;SuperAnimal;44
+112;0.035910802200984644;Unsupported Rears;SuperAnimal;49
+113;0.5613839285714285;Unsupported Rears;SuperAnimal;50
+114;0.44541484716157204;Unsupported Rears;SuperAnimal;51
+115;0.4769711163153786;Unsupported Rears;SuperAnimal;52
+116;0.5641180012040939;Unsupported Rears;SuperAnimal;54
+117;0.4339688041594454;Unsupported Rears;SuperAnimal;58
+118;0.34005763688760804;Unsupported Rears;SuperAnimal;5
+119;0.3125572868927589;Unsupported Rears;SuperAnimal;6
+0;0.8489679133455957;Supported Rears;Sturman;5
+1;0.07120017053933063;Supported Rears;Sturman;6
+2;0.8347179711412331;Supported Rears;Sturman;11
+3;0.8343260533862785;Supported Rears;Sturman;12
+4;0.865631067961165;Supported Rears;Sturman;14
+5;0.8063395570994356;Supported Rears;Sturman;15
+6;0.8314883148831488;Supported Rears;Sturman;16
+7;0.856649395509499;Supported Rears;Sturman;23
+8;0.051575931232091685;Supported Rears;Sturman;24
+9;0.8751300728407909;Supported Rears;Sturman;38
+10;0.8475267720550739;Supported Rears;Sturman;39
+11;0.8261424559611947;Supported Rears;Sturman;41
+12;0.826353992183138;Supported Rears;Sturman;43
+13;0.8634214186369957;Supported Rears;Sturman;44
+14;0.8239776479552959;Supported Rears;Sturman;49
+15;0.8017759206059022;Supported Rears;Sturman;50
+16;0.01964912280701754;Supported Rears;Sturman;51
+17;0.8574196048043395;Supported Rears;Sturman;52
+18;0.8426222506939995;Supported Rears;Sturman;54
+19;0.8312042241526144;Supported Rears;Sturman;58
+20;0.7293302540415705;Supported Rears;Sturman;5
+21;0.7933767835124186;Supported Rears;Sturman;6
+22;0.7257187257187258;Supported Rears;Sturman;11
+23;0.7840425531914894;Supported Rears;Sturman;12
+24;0.1422475106685633;Supported Rears;Sturman;14
+25;0.6484458735262594;Supported Rears;Sturman;15
+26;0.7325752017608218;Supported Rears;Sturman;16
+27;0.136;Supported Rears;Sturman;23
+28;0.08231707317073171;Supported Rears;Sturman;24
+29;0.7928947882100332;Supported Rears;Sturman;38
+30;0.7658872077028887;Supported Rears;Sturman;39
+31;0.7610708031023268;Supported Rears;Sturman;41
+32;0.6637911464245176;Supported Rears;Sturman;43
+33;0.7969639468690703;Supported Rears;Sturman;44
+34;0.7814456459874786;Supported Rears;Sturman;49
+35;0.7334453781512605;Supported Rears;Sturman;50
+36;0.8291468658067436;Supported Rears;Sturman;51
+37;0.06153846153846154;Supported Rears;Sturman;52
+38;0.1988543371522095;Supported Rears;Sturman;54
+39;0.6749226006191951;Supported Rears;Sturman;58
+40;0.8545090180360722;Supported Rears;Sturman;5
+41;0.831164759366672;Supported Rears;Sturman;6
+42;0.8439665471923538;Supported Rears;Sturman;11
+43;0.8565254969749352;Supported Rears;Sturman;12
+44;0.8626565386984192;Supported Rears;Sturman;14
+45;0.8285214348206473;Supported Rears;Sturman;15
+46;0.8233140067134574;Supported Rears;Sturman;16
+47;0.8531928900592496;Supported Rears;Sturman;23
+48;0.020378457059679767;Supported Rears;Sturman;24
+49;0.8939028591112642;Supported Rears;Sturman;38
+50;0.8690992600153099;Supported Rears;Sturman;39
+51;0.812650763870276;Supported Rears;Sturman;41
+52;0.8202909948879278;Supported Rears;Sturman;43
+53;0.8538083538083538;Supported Rears;Sturman;44
+54;0.8625592417061612;Supported Rears;Sturman;49
+55;0.8109439124487005;Supported Rears;Sturman;50
+56;0.8927929726492314;Supported Rears;Sturman;51
+57;0.007472644782492661;Supported Rears;Sturman;52
+58;0.8134957825679475;Supported Rears;Sturman;54
+59;0.8610848610848609;Supported Rears;Sturman;58
+60;0.48947368421052634;Unsupported Rears;Sturman;5
+61;0.057821604661586735;Unsupported Rears;Sturman;6
+62;0.5892921307941071;Unsupported Rears;Sturman;11
+63;0.358264081255771;Unsupported Rears;Sturman;12
+64;0.4649805447470817;Unsupported Rears;Sturman;14
+65;0.4645229869784746;Unsupported Rears;Sturman;15
+66;0.11986863711001643;Unsupported Rears;Sturman;16
+67;0.6717256885890951;Unsupported Rears;Sturman;23
+68;0.04372093023255814;Unsupported Rears;Sturman;24
+69;0.4108873974645787;Unsupported Rears;Sturman;38
+70;0.5773584905660377;Unsupported Rears;Sturman;39
+71;0.2276843467011643;Unsupported Rears;Sturman;41
+72;0.6279826464208242;Unsupported Rears;Sturman;43
+73;0.5571166768478923;Unsupported Rears;Sturman;44
+74;0.5188158554942298;Unsupported Rears;Sturman;49
+75;0.44150344097406036;Unsupported Rears;Sturman;50
+76;0.031476392705470896;Unsupported Rears;Sturman;51
+77;0.5636287274254516;Unsupported Rears;Sturman;52
+78;0.5673415492957746;Unsupported Rears;Sturman;54
+79;0.6405290505432215;Unsupported Rears;Sturman;58
+80;0.4551581130119233;Unsupported Rears;Sturman;5
+81;0.19999999999999998;Unsupported Rears;Sturman;6
+82;0.42447257383966247;Unsupported Rears;Sturman;11
+83;0.05555555555555556;Unsupported Rears;Sturman;12
+84;0.17645015630427233;Unsupported Rears;Sturman;14
+85;0.42465395664664407;Unsupported Rears;Sturman;15
+86;0.17324561403508773;Unsupported Rears;Sturman;16
+87;0.047326367547633676;Unsupported Rears;Sturman;23
+88;0.0921020054468928;Unsupported Rears;Sturman;24
+89;0.25398358281023664;Unsupported Rears;Sturman;38
+90;0.44659022329511167;Unsupported Rears;Sturman;39
+91;0.21265822784810123;Unsupported Rears;Sturman;41
+92;0.4134464341815897;Unsupported Rears;Sturman;43
+93;0.4635908838243468;Unsupported Rears;Sturman;44
+94;0.4249726177437021;Unsupported Rears;Sturman;49
+95;0.34253450439146804;Unsupported Rears;Sturman;50
+96;0.474012474012474;Unsupported Rears;Sturman;51
+97;0.13156269302038295;Unsupported Rears;Sturman;52
+98;0.04757709251101322;Unsupported Rears;Sturman;54
+99;0.41259105098855353;Unsupported Rears;Sturman;58
+100;0.5627186406796602;Unsupported Rears;Sturman;5
+101;0.2975289964699949;Unsupported Rears;Sturman;6
+102;0.6938616938616938;Unsupported Rears;Sturman;11
+103;0.27884615384615385;Unsupported Rears;Sturman;12
+104;0.5718608169440241;Unsupported Rears;Sturman;14
+105;0.5174861951091244;Unsupported Rears;Sturman;15
+106;0.2827102803738318;Unsupported Rears;Sturman;16
+107;0.6591173054587689;Unsupported Rears;Sturman;23
+108;0.0439511653718091;Unsupported Rears;Sturman;24
+109;0.47705696202531633;Unsupported Rears;Sturman;38
+110;0.613359336908825;Unsupported Rears;Sturman;39
+111;0.17058823529411762;Unsupported Rears;Sturman;41
+112;0.6774858320453375;Unsupported Rears;Sturman;43
+113;0.619342544068604;Unsupported Rears;Sturman;44
+114;0.5441741357234314;Unsupported Rears;Sturman;49
+115;0.4135211267605633;Unsupported Rears;Sturman;50
+116;0.4107458465889006;Unsupported Rears;Sturman;51
+117;0.055676855895196505;Unsupported Rears;Sturman;52
+118;0.5683297180043384;Unsupported Rears;Sturman;54
+119;0.5755175057500639;Unsupported Rears;Sturman;58
