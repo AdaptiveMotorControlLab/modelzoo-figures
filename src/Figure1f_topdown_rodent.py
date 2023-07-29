@@ -35,6 +35,7 @@ custom_order = ["from_scratch",
 
 df = df.loc[custom_order]
 
+print (df)
 zeroshot = df.loc['zeroshot']
 ap10k_zeroshot = df.loc['ap10k_zeroshot']
 
@@ -44,8 +45,6 @@ df = df.reset_index().loc(axis=1)[['level_0', 'level_1', 'level_2', 'mAP']]
 
 df_masked = df[(df['level_0'] !='SA + Zeroshot') & (df['level_0'] != 'AP10K + Zeroshot')]
 
-
-print (df_masked)
 
 df_masked['level_1'] = (pd.to_numeric(df_masked['level_1']) * dataset_size).astype(int)
 
@@ -81,8 +80,8 @@ ax1.legend().remove()
 handles, labels = ax1.get_legend_handles_labels()
 
 fig.legend(
-    handles[:4],
-    labels[:4],
+    handles[:5],
+    labels[:5],
     frameon=False,
     ncol=1,
     loc='upper right',
