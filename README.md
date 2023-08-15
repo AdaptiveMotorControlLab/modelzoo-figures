@@ -9,6 +9,12 @@ Part of the [DeepLabCut Model Zoo Project](modelzoo.deeplabcut.org)
 
 Figures and data supporting Ye et al. 2023.
 
+- iRodent: a new dataset of rodents in the wild. Used here for out-of-domain testing. See https://zenodo.org/record/8250392 for data and more information.
+- Models:
+  - TopViewMouse, weights and model card are banked on HuggingFace: [https://huggingface.co/mwmathis/DeepLabCutModelZoo-SuperAnimal-TopViewMouse](https://huggingface.co/mwmathis/DeepLabCutModelZoo-SuperAnimal-TopViewMouse)
+  - Quadruped 0.1 tensorflow version, weights and model card are banked on HuggingFace: [https://huggingface.co/mwmathis/DeepLabCutModelZoo-SuperAnimal-Quadruped](https://huggingface.co/mwmathis/DeepLabCutModelZoo-SuperAnimal-Quadruped)
+  - Quadruped pytorch version, weights and model card are banked on HuggingFace: [https://huggingface.co/mwmathis/DeepLabCutModelZoo-SuperAnimal-Quadruped_pt](https://huggingface.co/mwmathis/SuperAnimal_Quadruped_pt)
+
 
 ## Dependencies
 
@@ -34,3 +40,17 @@ pip install -r requirements.txt
       primaryClass={cs.CV}
 }
 ```
+
+## Keypoint model diagrams
+
+As part of SuperAnimal, we released two major classes of pose models, TopViewMouse and Quadruped. Here are their keypoint guides:
+
+<p align="center">
+<img src="https://github.com/AdaptiveMotorControlLab/modelzoo-figures/blob/main/data/pose_skeleton_key_topviewmouse.png" width="33%">
+</p>
+
+<p align="center">
+<img src="https://github.com/AdaptiveMotorControlLab/modelzoo-figures/blob/main/data/pose_skeleton_key_quadruped.png" width="43%">
+</p>
+
+
