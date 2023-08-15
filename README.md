@@ -2,7 +2,7 @@
 
 ![dlczoo](https://user-images.githubusercontent.com/28102185/209353843-cabc66e4-ab19-49df-8d46-5f1ddc9b5abe.png)
 
-Part of the [DeepLabcut Model Zoo](modelzoo.deeplabcut.org)
+Part of the [DeepLabCut Model Zoo Project](modelzoo.deeplabcut.org)
 
 
 ## Figures and Data
