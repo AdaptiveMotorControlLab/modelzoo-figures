@@ -25,8 +25,7 @@ for (dataset_ in c("horse10", "rodent")) {
   emm <- emmeans(model, pairwise ~ cond | frac)
 
   adjusted_results <- summary(emm$contrasts, adjust = "tukey")
-  df2 <- as_tibble(data)
-  effect_sizes <- eff_size(emm, sigma = sigma(interaction_model), edf = df.residual(interaction_model), type='d')
+  effect_sizes <- eff_size(emm, sigma = sigma(model), edf = df.residual(model), type='d')
   effect_sizes_df <- as.data.frame(effect_sizes)
 
   adjusted_results_df <- as.data.frame(adjusted_results)
