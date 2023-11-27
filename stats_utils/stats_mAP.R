@@ -1,10 +1,12 @@
 library(arrow)
 library(lme4)
+library(lmerTest)
 library(ggplot2)
 library(dplyr)
 library(emmeans)
+library(xtable)
 
-df <- arrow::read_feather('data/Figure2/results/stats_nozeroshot.feather')
+df <- arrow::read_feather('data/Figure2/results/stats_quad.feather')
 df$cond <- factor(df$cond, ordered = FALSE)
 df$dataset <- factor(df$dataset, ordered = FALSE)
 df$shuffle <- factor(df$shuffle, ordered = FALSE)
@@ -17,11 +19,13 @@ df %>%
   theme_classic()
 
 for (dataset_ in c("horse10", "rodent")) {
+  print(dataset_)
   df2 <- filter(df, dataset == dataset_)
 
   model = lmer(map ~ cond * frac + (1 | shuffle), data = df2)
   anova_table <- anova(model, ddf="Kenward-Roger")
-  print(anova_table)
+  anova_latex_table <- xtable(anova_table)
+  print(anova_latex_table)
   emm <- emmeans(model, pairwise ~ cond | frac)
 
   adjusted_results <- summary(emm$contrasts, adjust = "tukey")
