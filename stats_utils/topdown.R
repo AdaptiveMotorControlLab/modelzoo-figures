@@ -1,4 +1,5 @@
 library(lme4)
+library(lmerTest)
 library(emmeans)
 library(dplyr)
 library(flextable)
@@ -7,7 +8,6 @@ library(xtable)
 # Read in the data
 df <- arrow::read_feather('data/Figure1/stats_topview.feather')
 df$method <- factor(df$cond, ordered = FALSE)
-df <- filter(df, method %in% c('ImageNet transfer-learning', 'SuperAnimal memory-replay', 'SuperAnimal zeroshot'))
 df$dataset <- factor(df$dataset, ordered = FALSE)
 df$shuffle <- factor(df$shuffle, ordered = FALSE)
 df$frac <- factor(df$frac, ordered = TRUE)
