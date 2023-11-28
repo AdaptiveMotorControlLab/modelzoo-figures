@@ -1,32 +1,47 @@
 library(lme4)
+library(dplyr)
+library(lmerTest)
 library(emmeans)
 library(flextable)
 library(xtable)
 
 # Read in the data
 data <- read.csv("data/dropjitter.csv")
+data_jitter <- filter(data, metric == 'jittering')
+data_drop <- filter(data, metric == 'keypoint_dropping')
 
-null_model <- lmer(val ~ 1 + (1 | video), data = data)
-fixed_effects_model <- lmer(val ~ cond + metric + (1 | video), data = data)
-interaction_model <- lmer(val ~ cond * metric + (1 | video), data = data)
-random_slope_model <- lmer(val ~ cond + metric + (1 + cond | video), data = data)
-full_model <- lmer(val ~ cond * metric + (1 + cond | video), data = data)
-full_model2 <- lmer(val ~ video * cond * metric + (1 | video), data = data)
-full_model3 <- lmer(val ~ video * cond * metric + (1 + cond | video), data = data)
-anova(null_model, fixed_effects_model, interaction_model, random_slope_model, full_model, full_model2, full_model3)
+full_model_jitter <- lmer(val ~ video * cond + (1 | video), data = data_jitter)
+aov <- anova(full_model_jitter)
+print(xtable(aov))
 
-aov <- anova(full_model2)
-emm <- emmeans(full_model2, pairwise ~ cond | video * metric)
-
-adjusted_results <- summary(emm$contrasts, adjust = "tukey")
-df <- as_tibble(data)
-effect_sizes <- eff_size(emm, sigma = sigma(full_model2), edf = df.residual(full_model2), type='d')
+emm <- emmeans(full_model_jitter, pairwise ~ cond | video)
+effect_sizes <- eff_size(emm, sigma = sigma(full_model_jitter), edf = df.residual(full_model_jitter))
 effect_sizes_df <- as.data.frame(effect_sizes)
 
+adjusted_results <- summary(emm$contrasts, adjust = "tukey")
 adjusted_results_df <- as.data.frame(adjusted_results)
 adjusted_results_df$eff.size <- effect_sizes_df$effect.size
 
-new_names <- c(m3v1mp4 = "DLC-Openfield", maushaus_short = "MausHaus", smear_mouse = "Smear Lab", golden_mouse = "Golden Lab")
+new_names <- c(m3v1mp4 = "DLC-Openfield", maushaus_short = "MausHaus", smear_mouse = "Smear Lab", golden_mouse = "Golden Lab", black_dog = "Dog", elf = "Elk", horse = "Horse")
+adjusted_results_df$video <- new_names[adjusted_results_df$video]
+
+latex_table <- xtable(adjusted_results_df)
+print(latex_table, type = "latex")
+
+
+full_model_drop <- lmer(val ~ video * cond + (1 | video), data = data_drop)
+aov <- anova(full_model_drop)
+print(xtable(aov))
+
+emm <- emmeans(full_model_drop, pairwise ~ cond | video)
+effect_sizes <- eff_size(emm, sigma = sigma(full_model_drop), edf = df.residual(full_model_drop))
+effect_sizes_df <- as.data.frame(effect_sizes)
+
+adjusted_results <- summary(emm$contrasts, adjust = "tukey")
+adjusted_results_df <- as.data.frame(adjusted_results)
+adjusted_results_df$eff.size <- effect_sizes_df$effect.size
+
+new_names <- c(m3v1mp4 = "DLC-Openfield", maushaus_short = "MausHaus", smear_mouse = "Smear Lab", golden_mouse = "Golden Lab", black_dog = "Dog", elf = "Elk", horse = "Horse")
 adjusted_results_df$video <- new_names[adjusted_results_df$video]
 
 latex_table <- xtable(adjusted_results_df)
