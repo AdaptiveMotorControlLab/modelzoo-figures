@@ -1,6 +1,6 @@
-,method,pretrain_model,training_ratio,level_3,mAP,rmse
-0,finetune,SuperAnimal,1.0,shuffle1,0.7951095097522914,11.021137090829702
-1,memory-replay,SuperAnimal,1.0,shuffle1,0.8011264196138391,11.295569933377779
-2,transfer-learning,ImageNet,1.0,shuffle1,0.7054810955183937,11.228064977205717
-3,transfer-learning,SuperAnimal,1.0,shuffle1,0.7437919419074334,56.88040534421829
-4,zeroshot,SuperAnimal,1.0,shuffle1,0.6803844396182169,12.970524567824144
+,method,pretrain_model,training_ratio,level_3,mAP,RMSE
+0,fine-tuning,SuperAnimal,1.0,shuffle1,79.511,11.021
+1,memory-replay,SuperAnimal,1.0,shuffle1,80.113,11.296
+2,transfer learning,ImageNet,1.0,shuffle1,70.548,11.228
+3,transfer learning,SuperAnimal,1.0,shuffle1,74.379,10.748
+4,zero-shot,SuperAnimal,1.0,shuffle1,68.038,12.971
