@@ -1,6 +1,0 @@
-,"Params, M","MACs, G"
-ViT-MAE,29.8,7.5
-ViT-DeIT,15.0,8.8
-TokenPose (HRNet),7.51,20.1
-TokenPose (CNN),86.0,17.6
-HRNet,86.0,17.6

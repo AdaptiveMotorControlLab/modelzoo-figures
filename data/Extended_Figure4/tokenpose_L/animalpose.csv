@@ -1,0 +1,2 @@
+,method,pretrain_model,training_ratio,level_3,mAP,rmse
+0,zeroshot,SuperAnimal,1.0,shuffle1,0.8304265224787286,5.153841029140525
