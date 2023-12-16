@@ -7,13 +7,12 @@ Part of the [DeepLabCut Model Zoo Project](modelzoo.deeplabcut.org)
 
 ## Figures and Data
 
-Figures and data supporting Ye et al. 2023.
+Figures and data supporting Ye et al. 2023 (under revision).
 
 - iRodent: a new dataset of rodents in the wild. Used here for out-of-domain testing. See https://zenodo.org/record/8250392 for data and more information.
 - Models:
   - TopViewMouse, weights and model card are banked on HuggingFace: [https://huggingface.co/mwmathis/DeepLabCutModelZoo-SuperAnimal-TopViewMouse](https://huggingface.co/mwmathis/DeepLabCutModelZoo-SuperAnimal-TopViewMouse)
-  - Quadruped 0.1 tensorflow version, weights and model card are banked on HuggingFace: [https://huggingface.co/mwmathis/DeepLabCutModelZoo-SuperAnimal-Quadruped](https://huggingface.co/mwmathis/DeepLabCutModelZoo-SuperAnimal-Quadruped)
-  - Quadruped pytorch version, weights and model card are banked on HuggingFace: [https://huggingface.co/mwmathis/DeepLabCutModelZoo-SuperAnimal-Quadruped_pt](https://huggingface.co/mwmathis/SuperAnimal_Quadruped_pt)
+  - Quadruped, weights and model card are banked on HuggingFace: [https://huggingface.co/mwmathis/DeepLabCutModelZoo-SuperAnimal-Quadruped](https://huggingface.co/mwmathis/DeepLabCutModelZoo-SuperAnimal-Quadruped)
 
 
 ## Dependencies
@@ -32,8 +31,8 @@ pip install -r requirements.txt
 
 ```
 @article{ye2023superanimal,
-      title={SuperAnimal models pretrained for plug-and-play analysis of animal behavior}, 
-      author={Shaokai Ye and Anastasiia Filippova and Jessy Lauer and Maxime Vidal and Steffen Schneider and Tian Qiu and Alexander Mathis and Mackenzie Weygandt Mathis},
+      title={SuperAnimal pretrained pose estimation models for behavioral analysis}, 
+      author={Shaokai Ye and Anastasiia Filippova and Jessy Lauer and Steffen Schneider and Maxime Vidal and Tian Qiu and Alexander Mathis and Mackenzie Weygandt Mathis},
       year={2023},
       eprint={2203.07436},
       archivePrefix={arXiv},
